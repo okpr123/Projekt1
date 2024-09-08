@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Przychodnia Medyczna "Zdrowie"</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Favicon -->
+     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/header.jpg" alt="header" width="1792" height="655">
+        <div class="container">
+            <!-- Hamburger menu ikona -->
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#gallery">Galeria zdjęć</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <h1>Przychodnia Medyczna "Zdrowie"</h1>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>O naszej przychodni</h2>
+            <p>Jesteśmy nowoczesną przychodnią medyczną, oferującą szeroki zakres usług zdrowotnych. Nasz zespół składa się z doświadczonych specjalistów, którzy zawsze dbają o zdrowie i dobre samopoczucie naszych pacjentów.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nasze usługi</h2>
+            <ul>
+                <li>Porady internistyczne</li>
+                <li>Badania laboratoryjne</li>
+                <li>Konsultacje specjalistyczne</li>
+                <li>Fizjoterapia</li>
+                <li>Badania diagnostyczne</li>
+            </ul>
+        </div>
+        
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h2>Galeria zdjęć</h2>
+            <div class="gallery">
+                <img src="images/image1.jpg" alt="Zdjęcie 1" class="gallery-image" id="current-image">
+                <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact-container">
+            <!-- Dane kontaktowe -->
+            <div class="contact-info">
+                <h2>Skontaktuj się z nami</h2>
+                <p><strong>Adres:</strong> ul. Zdrowa 123, 00-123 Warszawa</p>
+                <p><strong>Telefon:</strong> +48 123 456 789</p>
+                <p><strong>Email:</strong> kontakt@przychodnia.pl</p>
+                <p><strong>Godziny otwarcia:</strong><br>
+                   Pon - Pt: 8:00 - 18:00<br>
+                   Sobota: 9:00 - 14:00<br>
+                   Niedziela: Zamknięte
+                </p>
+            </div>
+
+            <!-- Formularz kontaktowy -->
+            <div class="contact-form">
+                <h2>Formularz kontaktowy</h2>
+                <form>
+                    <label for="name">Imię i nazwisko:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            Strona stworzona w ramach zaliczeń przedmiotów "Programowanie aplikacji internetowych" oraz "Tworzenie responsywnych stron internetowych"
+        </div>
+    </footer>
+    <script src="skrypty.js"></script> 
+
+</body>
+</html>
+
+
+
+
